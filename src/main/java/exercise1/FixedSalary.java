@@ -13,11 +13,10 @@ public class FixedSalary extends Employee {
 		return Fsalary;
 	}
 
-	public int FinalSalary= getFSalary();
 
 	@Override
 	public int FinalSalary() {
-		return 0;
+		return Fsalary;
 	}
 }
 

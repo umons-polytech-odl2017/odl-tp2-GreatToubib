@@ -4,27 +4,25 @@ public class HourlySalary extends Employee {
 
 
 	private int HourRate;
-	private int WorkHours;
+	private int WorkHours = 0;
 
-	public HourlySalary(String name, int hourRate, int workHours) {
+	public HourlySalary(String name, int hourRate) {
 		super(name);
 		HourRate = hourRate;
-		WorkHours = workHours;
+		WorkHours = WorkHours;
 	}
 
-	public int getHourRate() {
+	public int getHourRate() {                 // alt + insert !
 		return HourRate;
 	}
 
-	public int getWorkHours() {
-		return WorkHours;
-	}
-
-	public int FinalSalary=getHourRate()*getWorkHours();
 
 	@Override
-	public int FinalSalary() {
-		return 0;
+	public void workOneHour() {WorkHours++;}
+
+	@Override
+	public int FinalSalary() {   //
+		return WorkHours*HourRate;
 	}
 }
 

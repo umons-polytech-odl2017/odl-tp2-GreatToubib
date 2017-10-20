@@ -5,6 +5,8 @@ public class CommissionSalary extends Employee {
 
 	private int Bsalary;
 	private int commission;
+	private int sales=0;
+
 
 
 	public CommissionSalary(String name, int Bsalary, int commission) {
@@ -21,10 +23,16 @@ public class CommissionSalary extends Employee {
 		return Bsalary;
 	}
 
+
 	public int FinalSalary=getBSalary()+getCommission();
 
 	@Override
+	public void sell() {sales++;}
+
+
+
+	@Override
 	public int FinalSalary() {
-		return 0;
+		return Bsalary+commission*sales;
 	}
 }

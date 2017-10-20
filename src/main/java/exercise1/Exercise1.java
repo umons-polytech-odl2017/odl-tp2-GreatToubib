@@ -11,11 +11,14 @@ public class Exercise1 {
 
 
 
-	public Employee HourlySalary(String name, int HourRate, int WorkHours) { return new HourlySalary(name, HourRate, WorkHours);}
+	public Employee HourlySalary(String name, int HourRate) { return new HourlySalary(name, HourRate);}
 
 }
 
 /*
+
+exemple du tp 1
+
 public class Exercise1 {
 	static Person createPerson(String name, int age) {
 		// Ajoutez les champs name et age à la classe Person.
@@ -37,3 +40,4 @@ a
 
 	}
 }
+*/

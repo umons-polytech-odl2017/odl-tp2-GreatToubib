@@ -10,6 +10,8 @@ public abstract class Employee {
 	public abstract int FinalSalary() ;
 
 
+	public void sell() {}
+
 	public void workOneHour() { }
 
 	public String getName() {
