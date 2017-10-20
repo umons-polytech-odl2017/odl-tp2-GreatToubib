@@ -31,7 +31,7 @@ public class Exercise1 {
 
 		String name = args[0];
 		int age= Integer.parseInt(args[1]);
-
+a
 		Person p1 = new Person(name, age);
 		System.out.println(p1.getName() + p1.getAge() );
 
